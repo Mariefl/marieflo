@@ -1,0 +1,170 @@
+.container{
+  position: relative;
+  top: 100px;
+  
+  
+}
+
+  
+
+  
+  h1{
+    font-size: 40px;
+    font-weight: 400;
+    color:#51626F;
+    letter-spacing :2px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    
+}
+
+.hr {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center;
+}
+
+.hr::before,
+.hr::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: .0625em solid ;
+
+    /* nécessaire pour afficher les pseudo-éléments */
+    content: "";
+
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 0 .5em;
+}  
+.cart{
+
+    margin-top: 25px;
+    position: relative;
+    background-color:white;
+    width: 270px;
+    height: 350px;
+    box-shadow: 0px 4px 6px 1px rgba(94, 51, 51, 0.5);
+    border-radius: 3px;
+}
+
+.cart img{
+    width: 100%;
+    height: 50%;
+   
+}
+h3{
+  text-align: center;
+  margin:10px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 200;
+
+}
+p{
+  text-align: center;
+  margin:10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color:#51626F;
+ font-size: 18px;
+
+}
+
+.btn{
+  position : relative;
+  text-align: center;
+  left: 25%;
+  width: 50%;
+  background-color: #379AD4;
+  height: 40px;
+  border: none;
+  outline:unset;
+  color: white;
+  text-decoration: none;
+
+}
+a.btn:hover{
+  background-color:#48818a;
+
+}
+a.link{
+  position : relative;
+  text-align: center;
+  top: 50px;
+  left: 40%;
+  width: 200px;
+  background-color:#48818a ;
+  height: 40px;
+  border: none;
+  outline:unset;
+  color: white;
+  text-decoration: none;
+
+}
+.part2{
+  margin-top: 130px;
+}
+
+.part3{
+  
+  margin-top: 150px;
+ 
+}
+.carousel{
+
+margin-top: 30px;
+
+}
+  
+#img{
+  width: 150px;
+  height: 150px;
+}
+.image-ronde{
+border-radius :50%;
+  
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.part4 {
+background:#fff ;
+margin-top:60px;
+
+ 
+}
+#image{
+  margin-left: 30px;
+}
+.part5{
+margin-top: 60px;
+
+
+}
+mat-icon{
+ font-size:60px;
+margin-left: 30%;
+
+}
+.icon{
+
+ 
+  padding: 15px 15px;
+
+}

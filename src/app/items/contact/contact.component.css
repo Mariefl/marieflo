@@ -1,0 +1,101 @@
+.part{
+    background-color: #ffffff;
+    margin-top: 100px;
+    padding: 1px 0;
+    height:650px;
+    box-shadow: 0 2px 4px rgba(165, 63, 63, 0.4);
+}
+
+.title{
+
+    border-bottom: 1px ridge #51626F;
+    width:1138px ;
+    height: 50px;
+    margin-left: -1px;
+    
+}
+h1{
+    font-size: 35px;
+    margin-top: 25px;
+    margin-left: 50px;
+    color: #AC0EA0;
+    
+}
+
+
+.form{
+    margin-left: 25px;
+}
+
+.example-form-field {
+    width:400px;
+    color: #AC0EA0 !important;
+
+  }
+  textarea{
+      height: 100px;
+  }
+  
+  .left{
+       margin-left: 20px;
+        float: left;
+        width:45%;
+        height: 480px;
+    
+    }
+   h3{
+       font-size: 28px;
+       margin-left:25px;
+       color: #51626F;
+   }
+    .right{
+        border-left: 4px  dashed #8CC427 ;
+        margin-left: 650px;
+        height: 350px;
+      
+    
+    }
+    .icone{
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    mat-icon{
+     color:#2F98DF;
+     font-size: 80px;
+    }
+    h2{
+        margin-top: 10px;
+        font-size: 25px;
+        color: #51626F;
+    }
+    p{
+        margin-top: -10px;
+        font-size: 18px;
+        color: #51626F;
+    }
+    mat-label{
+        font-size:20px;
+    }
+    button{
+        background-color:rgb(240, 38, 38);
+        width:190px;
+        color:white;
+        font-size: 20px;
+        text-transform:uppercase ;
+        letter-spacing: 2px;
+        
+
+    }
+    .part1{
+        height: 480px;
+        margin-top: 50px;
+        background-color:#ffffff;
+        box-shadow: 0 2px 4px rgba(165, 63, 63, 0.4);
+
+       
+    }
+    .map{
+
+        margin-right:-15px;
+        margin-left: -15px;
+    }

@@ -1,0 +1,88 @@
+.part{
+    background-color: #ffffff;
+    margin-top: 100px;
+    padding: 1px 0;
+    height:780px;
+    box-shadow: 0 2px 4px rgba(165, 63, 63, 0.4);
+}
+
+.title{
+
+    border-bottom: 1px ridge #51626F;
+    width:1138px ;
+    height: 50px;
+    margin-left: -1px;
+    
+}
+h1{
+    font-size: 35px;
+    margin-top: 25px;
+    margin-left: 50px;
+    color: #AC0EA0;
+    
+}
+.left{
+
+     margin-top: 20px;
+     width:50%;
+     height: 550px;
+     border:none;
+    }
+    .titre1{
+        margin-top: 20px;
+    }
+
+    h3{
+        font-size: 28px;
+        margin-left:25px;
+        color: #51626F;
+        text-align: center;
+    }
+    form{
+        margin-left:50px;
+        margin-top:20px;
+    }
+    mat-form-field{
+        width:450px;
+        font-size: 15px;
+    }
+    .radio{
+        margin-top: 10px;
+    }
+    .radio label{
+        font-size:20px;
+    }
+    .radio mat-radio-button{
+        margin: 0 12px;
+
+    }
+    .right{
+        border-left:2px groove #E51216;
+        margin-top: 20px;
+        
+        height: 350px;
+      
+    
+    }
+    .titre2{
+        margin-top: 20px;
+    }
+
+    .button{
+        margin-top: 30px;
+    }
+    .button1{
+        margin-top: 20px;
+    }
+.btn{
+        background-color:#8CC427;
+        width:190px;
+        color:white;
+        font-size: 20px;
+        text-transform:uppercase ;
+        letter-spacing: 2px;
+        
+
+    
+
+    }

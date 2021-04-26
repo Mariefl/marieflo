@@ -1,0 +1,106 @@
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+
+
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer
+     class="sidenav"
+        attr.role="navigation"
+        mode="over"
+    >
+        
+      <mat-toolbar > 
+  
+    <button type="button" class="btn"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="drawer.close()">   <mat-icon class="menu"aria-label="Side nav toggle icon">close</mat-icon> </button>
+  
+      </mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item routerLink="Acceuil">Accueil</a>
+        <a mat-list-item routerLink="ages">Ages <mat-icon aria-label="Side nav toggle icon">chevron_right</mat-icon> </a>
+        <a mat-list-item routerLink="marque">Marque  <mat-icon aria-label="Side nav toggle icon">chevron_right</mat-icon></a>
+        <a mat-list-item routerLink="categorie">Catégorie  <mat-icon aria-label="Side nav toggle icon">chevron_right</mat-icon></a>
+        <a mat-list-item routerLink="heros">Héros   <mat-icon aria-label="Side nav toggle icon">chevron_right</mat-icon></a>
+        <a mat-list-item routerLink="Promotion">Promotion</a>
+        <a mat-list-item routerLink="nouveaute">Nouveauté</a>
+        <a mat-list-item  routerLink="Contact">Contact</a>
+        
+  
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="part" fxLayout="row"  fxLayoutGap=18%>
+
+        
+          <img src="assets/TITR.jpg" alt="" width="130px">
+         
+
+          <div class="search">
+
+     <input matInput placeholder="Rechercher">
+
+          <button type="button" class="icone" >
+            <mat-icon>search</mat-icon>
+          </button>
+          </div>
+          
+        
+
+        <div class="icon">
+           <div class="person">
+             <a routerLink="connexion">
+            <mat-icon>person_outline</mat-icon>
+            <h3>Compte</h3></a>
+         </div>
+           <div class="shop">
+             <a href="">
+            <mat-icon>shopping_cart</mat-icon>
+          <h3>Panier</h3> </a></div>
+          
+        </div>
+
+      </div>
+      <mat-toolbar >
+        <button
+        class="btn-btn"
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.open()"
+        >
+        <mat-icon class="menu" aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+        
+        <span class="example-spacer"></span>
+    <div class=links>
+          <a  routerLinkActive="active" routerLink="Acceuil">Accueil</a>
+          <a  routerLinkActive="active" routerLink="ages">Ages <mat-icon aria-label="Side nav toggle icon">arrow_drop_down</mat-icon></a>
+          <a routerLinkActive="active" routerLink="marque">Marque <mat-icon aria-label="Side nav toggle icon">arrow_drop_down</mat-icon></a>
+          <a routerLinkActive="active" routerLink="categorie">Catégorie  <mat-icon aria-label="Side nav toggle icon">arrow_drop_down</mat-icon></a>
+          <a routerLinkActive="active" routerLink="heros">Héros <mat-icon aria-label="Side nav toggle icon">arrow_drop_down</mat-icon></a>
+          <a routerLinkActive="active" routerLink="p romotion">Promotion </a>
+          <a routerLinkActive="active" routerLink="nouveaute">Nouveauté</a>
+          <a routerLinkActive="active" routerLink="Contact">Contact</a>
+          
+    </div>
+        
+       
+      </mat-toolbar>
+      <!-- Add Content Here -->
+    
+
+  
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+   

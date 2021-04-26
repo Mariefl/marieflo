@@ -1,0 +1,108 @@
+<div class="container part">
+
+    <div class="title">
+        
+        <h1>Identifier-Vous</h1>
+        
+    </div>
+
+    <div class="" fxLayout="row">
+     <div class="left">
+        <div class="titre1">
+            <h3 >Créer un compte</h3>
+            </div>
+         <form fxLayout="column" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+         <mat-form-field appearance="fill">
+            <mat-label>Nom</mat-label>
+            <input matInput placeholder=" Entrez votre nom" formControlName="nom" required>
+            <mat-error *ngIf="registerForm.get('nom').invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Prenom</mat-label>
+            <input matInput placeholder="Entrer votre prenom" formControlName="prenom" required>
+            <mat-error *ngIf="registerForm.get('prenom').invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Entrer votre email" formControlName="email" required>
+            <mat-error *ngIf="registerForm.get('email').invalid">{{getErrorMail()}}</mat-error>
+          </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Mot de passe</mat-label>
+              <input matInput placeholder="Entrer votre mot de passe" [type]="hide ? 'password' : 'text'" formControlName="mdp" required>
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+              <mat-error *ngIf="registerForm.get('mdp').invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+            
+
+            <mat-form-field appearance="fill">
+                <mat-label>Confirmation</mat-label>
+                <input matInput placeholder="Confirmer votre mot de passe" [type]="hide ? 'password' : 'text'" formControlName="mdpp" required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+                <mat-error *ngIf="registerForm.get('mdpp').invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+
+             <div class="radio" >
+                <label>Civilité: </label>
+              <mat-radio-group aria-label="Select an option" formControlName="sexe" >
+                <mat-radio-button value="Homme">Mr</mat-radio-button>
+                <mat-radio-button value="femmes">Mdme</mat-radio-button>
+                <mat-radio-button value="jeune">Mlle</mat-radio-button>
+              </mat-radio-group></div>
+
+
+              
+              <div fxLayout="row" fxLayoutGap="4%" class="button">
+                <button mat-button type="submit" class="btn" >S'inscrire</button> 
+                <button mat-button (click)="clear()" class="btn">Annuler</button>  </div> 
+
+          </form> 
+
+
+    
+        </div>
+    <div class="right">
+
+        <div class="titre2">
+            <h3 >S'identifier</h3>
+            </div>
+
+        <form fxLayout="column">
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Entrer votre email">
+                
+              </mat-form-field>
+    
+                <mat-form-field appearance="fill">
+                  <mat-label>Mot de passe</mat-label>
+                  <input matInput placeholder="Entrer votre mot de passe" [type]="hide ? 'password' : 'text'">
+                  <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                </mat-form-field>
+
+                <div fxLayout="row" fxLayoutGap="8%" class="button1"> 
+                    <button mat-button class="btn">Se connecter</button> 
+                    <button mat-button class="btn">Annuler</button>  </div>
+    
+        </form>
+
+
+
+    </div>
+
+
+    </div>
+
+</div>
+
+<app-footer></app-footer>

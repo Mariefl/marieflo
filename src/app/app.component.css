@@ -1,0 +1,204 @@
+.part{
+  border: 2px solid black;
+  height:100px;
+  background:#ffffff;
+}
+img{
+  margin-left:50px;
+}
+.search{
+
+  height: 50px;
+  margin-top: 20px;
+  display:flex;
+box-shadow:0 2px 4px 2px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+}
+input{
+  height:51px;
+  width:450px;
+  font-size: 20px;
+  border: none;
+  border-radius:5px;
+}
+.icone{
+  background: #C6E123 ;
+  width:50px;
+  height: 50px;
+  color:#fff;
+  border: none;
+  border-radius:5px;
+  
+}
+.icon{
+margin-left:-150px;
+display: flex;
+
+}
+.person{
+ height: 60px;
+ margin-top: 15px;
+
+}
+.person a{
+  text-decoration: none;
+  color:#51626F
+
+}
+.person mat-icon{
+  font-size:35px;
+  color: #51626F;
+margin-left: 15px;
+
+}
+.shop{
+  
+  height:60px;
+  margin-top:15px;
+  margin-left:20px;
+  
+}
+.shop a{
+  text-decoration: none;
+  color: #51626F;
+}
+
+
+.shop mat-icon
+{
+  margin-left: 10px;
+  font-size:35px;
+  color:#51626F;
+}
+h3{
+  margin-top: -10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 250px;
+    display: none;
+     
+  }
+  .btn{
+    margin-left:130px ;
+    color: #fff;
+  }
+  .btn-btn{
+    color: #fff;
+   
+    
+  }
+  .menu{
+    font-size: 28px;
+  }
+  
+  .mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #2F98DF;
+
+  }
+  .btn-btn{
+    display:none;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .links{
+    margin-right: 100px;
+   
+   
+  }
+  
+  .links a {
+    
+    text-decoration: none;
+    color:white;
+    margin-left: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  .links a.hover, 
+  .links a.active{
+    background-color: #FED432 !important;
+    padding:5px 15px;
+    border-radius: 3px;
+    color:#6F4302 !important;
+  }
+  mat-nav-list a{
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top:10px;
+    transition: 0.5s;
+  }
+  mat-nav-list a.hover, 
+  mat-nav-list a.active{
+    
+      background-color:#FED432;  
+      padding:5px 15px;
+      border-radius: 3px;
+      color:#6F4302;
+      
+    
+  }
+  
+  @media screen and (max-width:1158px)
+  {
+  .links{
+    margin-right:30px;
+  }
+    .links a{
+      margin-left: 45px;
+    }
+  }
+  @media screen and (max-width:1140px)
+  {
+  .links{
+    margin-right:30px;
+  }
+    .links a{
+      margin-left: 35px;
+    }
+  }
+  @media screen and (max-width:997px)
+  {
+  .links{
+    margin-right:30px;
+  }
+    .links a{
+      margin-left: 25px;
+    }
+  }
+  @media screen and (max-width:910px)
+  {
+  .links{
+    margin-right:30px;
+  }
+    .links a{
+      margin-left: 15px;
+    }
+  }
+   
+  
+  @media screen and (max-width:768px){
+    .btn-btn{
+      display: block ;
+    }
+    .links{
+      display:none;
+    }
+    .sidenav{
+      display: block;
+    }
+   
+  }
